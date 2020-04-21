@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog API Exercise</title>
+    <link rel="stylesheet" href="dog-random.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="dog-random.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dog API: A Simple Example</h1>
+
+        <form>
+            <label for="number">Pick between 1 and 50 Dog pictures:</label>
+            <input type="number" id="number" name="number" min="1" max="50" value="3">
+            <input type="submit" value="Get Dog Pics">
+        </form>
+        <section class="results hidden">
+          <h2>Look at this dog!</h2>
+          <img class="results-img" alt="placeholder">
+        </section>
+
+    </div>
+</body>
+</html>
