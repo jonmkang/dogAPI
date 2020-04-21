@@ -9,11 +9,11 @@ function getDogImage(numberOfDogs) {
 }
 
 function displayResults(responseJson) {
-  console.log(responseJson);
+  console.log(responseJson.message.map(image=>image));
+
+  $('.results').empty();
   //replace the existing image with the new one
-  $('.results-img').replaceWith(
-    `<img src="${responseJson.message}" class="results-img">`
-  )
+  $('.results').append(responseJson.message.map(image => `<img src="${image}" class="results-img">`));
   //display the results section
   $('.results').removeClass('hidden');
 }
